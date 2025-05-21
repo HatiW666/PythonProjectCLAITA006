@@ -8,7 +8,7 @@ conn = mysql.connector.connect(
     database="library"
 )
 
-print("Ciao")
+print("Ciao, mondo!")
 
 print("Connessione avvenuta con successo!")
 
