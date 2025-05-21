@@ -4,9 +4,11 @@ import mysql.connector
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="password", 
-    database="scuola2"
+    password="",
+    database="library"
 )
+
+print("Ciao")
 
 print("Connessione avvenuta con successo!")
 

@@ -11,7 +11,9 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 
 sql = "INSERT INTO studenti (nome, voto) VALUES (%s, %s)"
-valori = ("Giulia", 27.5)
+nome = input("Inserisci nome: ")
+voto = float(input("Inserisci voto: "))
+valori = (nome, voto)
 
 cursor.execute(sql, valori)
 conn.commit()
